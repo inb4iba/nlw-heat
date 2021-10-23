@@ -13,6 +13,8 @@ Além disso também foi criada uma aplicação em Elixir que retorna as palavras
 ## Tecnologias
 
 - [Node.js](https://nodejs.org/en/)
+- [Prisma](https://www.prisma.io/)
+- [SQLite](https://www.sqlite.org/index.html)
 - [Vite](https://vitejs.dev/)
 - [React](https://pt-br.reactjs.org/)
 - [Expo](https://expo.io/)
