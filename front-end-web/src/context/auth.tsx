@@ -38,6 +38,7 @@ export function AuthProvider(props: AuthProvider) {
   async function signIn(githubCode: string) {
     const res = await api.post<AuthResponse>("/authenticate", {
       code: githubCode,
+      client_type: "web",
     });
 
     const { token, user } = res.data;
