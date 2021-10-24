@@ -17,6 +17,11 @@ config :heat_tags, HeatTagsWeb.Endpoint,
   pubsub_server: HeatTags.PubSub,
   live_view: [signing_salt: "3IvQwFny"]
 
+config :heat_tags, HeatTags.Scheduler,
+  jobs: [
+    {"0 0 * * *", {HeatTags.Tags.Count, :call, []}}
+  ]
+
 # Configures the mailer
 #
 # By default it uses the "Local" adapter which stores the emails
