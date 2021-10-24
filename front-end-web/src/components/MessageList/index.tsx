@@ -29,7 +29,6 @@ export function MessageList() {
   useEffect(() => {
     setInterval(() => {
       if (messagesQueue.length > 0) {
-        console.log("teste");
         setMessages((prevState) =>
           [messagesQueue[0], prevState[0], prevState[1]].filter(Boolean)
         );
@@ -50,7 +49,6 @@ export function MessageList() {
       <img src={logoImg} alt="Do While 2021" />
       <ul className={styles.messageList}>
         {messages.map((message) => {
-          console.log(message);
           return (
             <li key={message.id} className={styles.message}>
               <p className={styles.messageContent}>{message.text}</p>
