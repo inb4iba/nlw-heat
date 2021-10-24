@@ -8,7 +8,10 @@ Além disso também foi criada uma aplicação em Elixir que retorna as palavras
 
 ## Demonstração
 
-*Em breve*
+### Web
+![](dowhile_web.gif)
+### App Mobile
+![](dowhile_app.gif)
 
 ## Tecnologias
 
